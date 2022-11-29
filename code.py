@@ -1,4 +1,6 @@
-#Project Practise
+#Project Code
+# Author: Sadie Concannon
+
 #Requisite libraries and setings for analysis
 #Imported libraries:
 
@@ -21,11 +23,6 @@ attrition = pd.read_csv("HR-Employee-Attrition.csv")
 
 #attrition.describe()
 #attrition.info()
-
-# I then amended further so that the dataset summary is not shown while starting the program, but output to analysis.txt.
-# Function summary_to_file() is created for making the summary and writing it into the file at the same time. def summary_to_file(): sys.stdout = open("summary.txt","w")
-# To output the summary into a file I used the sys module and it's standard output stream stdout (per above code)7.
-# The output gives various overviews of the dataset
 
 def summary_to_file():
     sys.stdout = open("summary.txt","w")
