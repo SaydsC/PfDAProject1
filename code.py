@@ -36,15 +36,36 @@ def summary_to_file():
 fig, axes = plt.subplots(2, 2, figsize=(10,10))
 
 axes[0,0].set_title("Attrition")
-axes[0,0].hist(attrition['Attrition'], bins=7)
+axes[0,0].hist(attrition['Attrition'], bins=10)
 
 axes[0,1].set_title("Age")
-axes[0,1].hist(attrition['Age'], bins=5) 
+axes[0,1].hist(attrition['Age'], bins=10) 
 
 axes[1,0].set_title("Gender")
-axes[1,0].hist(attrition['Gender'], bins=6)
+axes[1,0].hist(attrition['Gender'], bins=10)
 
-axes[1,1].set_title("Position")
-axes[1,1].hist(attrition['Position'], bins=6)
+axes[1,1].set_title("Years of Employemnt")
+axes[1,1].hist(attrition['YearsAtCompany'], bins=10)
+#plt.show()
+
+#scatterplot
+f = plt.figure(figsize=(6,3))
+fig = sns.scatterplot(x="YearsAtCompany", y="Attrition", data=attrition)
+
+sns.set()
+#plt.show()
+
+#swarmplot
+f=plt.figure(figsize=(20,13))
+sns.swarmplot(x="Attrition", y="YearsAtCompany", hue="Gender", data=attrition)
+#plt.show()
+
+#stripplot
+f=plt.figure(figsize=(10, 6))
+sns.stripplot(x="Attrition", y="Position", hue="Gender", data=attrition)
+#plt.show()
+
+#pairplot
+f=plt.figure(figsize=(25,13))
+sns.pairplot(data=attrition, vars=["Gender", "Attrition", "YearsAtCompany", "JobLevel"])
 plt.show()
-
