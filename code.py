@@ -55,8 +55,11 @@ sns.set()
 
 #swarmplot
 f=plt.figure(figsize=(20,13))
-sns.swarmplot(x="Attrition", y="YearsAtCompany", hue="Gender", data=attrition)
+#sns.swarmplot(x="Attrition", y="YearsAtCompany", hue="Gender", data=attrition)
 #plt.show()
+
+#the seaborn website recommends the use of a box plot or violon plot alongside a swarmplot 
+sns.violinplot(data=attrition, x="Attrition", y="YearsAtCompany", hue="Gender", bw='scott', cut=2, scale='area', scale_hue=True, gridsize=100, width=0.8, inner='box', split=False, dodge=True, saturation=0.75)
 
 #stripplot
 f=plt.figure(figsize=(10, 6))
