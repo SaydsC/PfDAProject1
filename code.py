@@ -29,6 +29,7 @@ def summary_to_file():
     print ("\n")
     sys.stdout.close()
 
+
 #start with a simple histogram amended to have 4 on one page
 fig, axes = plt.subplots(2, 2, figsize=(10,10))
 
@@ -41,7 +42,7 @@ axes[0,1].hist(attrition['Age'], bins=10)
 axes[1,0].set_title("Gender")
 axes[1,0].hist(attrition['Gender'], bins=10)
 
-axes[1,1].set_title("Years of Employemnt")
+axes[1,1].set_title("Years Service")
 axes[1,1].hist(attrition['YearsAtCompany'], bins=10)
 #plt.show()
 
