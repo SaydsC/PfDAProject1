@@ -1,4 +1,4 @@
-# Project Code
+# Project analysis
 # Author: Sadie Concannon
 
 #Requisite libraries and settings for analysis
