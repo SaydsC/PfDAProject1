@@ -1,7 +1,7 @@
-#Project Code
+# Project Code
 # Author: Sadie Concannon
 
-#Requisite libraries and setings for analysis
+#Requisite libraries and settings for analysis
 #Imported libraries:
 
 import pandas as pd
