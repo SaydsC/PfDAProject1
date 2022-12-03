@@ -19,11 +19,11 @@ This repository contains one Jupyter notebook that contains the main findings. I
 To run the noteboook on your local machine you will need Pyhton 3.9 or above. This notebook has been completed using Anaconda and the following imported the following libraries;
 
 '''
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt #for plotting
-import sys
-import seaborn as sns
+- import pandas as pd
+- import numpy as np
+- import matplotlib.pyplot as plt #for plotting
+- import sys
+- import seaborn as sns
 
 '''
 
@@ -34,4 +34,4 @@ To run this notebook on a local machine you should do the following:
 3. In the terminal type "Jupyter Notebook" and press "Enter"
 4. This will open the notebook on the Jupyter browser
 
-The Python code is stored in the code.py file and can be run on any terminal. For this project I used visual studio code for ease of pushing to GitHub.
+The Python code is stored in the code_1.py file and can be run on any terminal. For this project I used visual studio code for ease of pushing to GitHub.
